@@ -1,0 +1,10 @@
+
+Nhung Dependence can cai
+
+"argon2": "^0.28.5", // Hash password cua nguoi dung
+"cors": "^2.8.5", //Frontend noi chuyen vs backend
+"dotenv": "^16.0.1", // Quan ly bien moi truong
+"express": "^4.18.1", //server express
+"jsonwebtoken": "^8.5.1", // quan ly login logout xac thuc nguoi dung
+"mongoose": "^6.3.8" //Giao tiep voi database
+"nodemon": //Khoi dong lai server  khi code thay doi

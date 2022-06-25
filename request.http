@@ -1,0 +1,55 @@
+
+POST http://localhost:5020/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "khanv",
+    "password": "123456"
+}
+
+###
+
+POST http://localhost:5020/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "khanv",
+    "password": "123456"
+}
+
+###
+
+POST http://localhost:5020/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmFjNTlkMGI2MmU1MzY3MzI4ZjZlYmIiLCJpYXQiOjE2NTU0Nzc2OTl9.fxdCr1SsDeRV2X_C2y7RseBBCR7Giw8_oe5FFxTi7hs
+
+{
+    "title": "Second post",
+    "description": "123456",
+    "url": "google.com",
+    "status": "LEARNED"
+}
+
+###
+
+GET http://localhost:5020/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmFjNTlkMGI2MmU1MzY3MzI4ZjZlYmIiLCJpYXQiOjE2NTU0Nzc2OTl9.fxdCr1SsDeRV2X_C2y7RseBBCR7Giw8_oe5FFxTi7hs
+
+
+###
+
+PUT http://localhost:5020/api/posts/62ac980eff0d5d6daddaa0ab
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmFjNTlkMGI2MmU1MzY3MzI4ZjZlYmIiLCJpYXQiOjE2NTU0Nzc2OTl9.fxdCr1SsDeRV2X_C2y7RseBBCR7Giw8_oe5FFxTi7hs
+
+{
+    "title": "Second post",
+    "description": "Content post",
+    "url": "https://youtube.com",
+    "status": "TO LEARN" 
+}
+
+###
+
+DELETE http://localhost:5020/api/posts/62ac980eff0d5d6daddaa0ab
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmFjNTlkMGI2MmU1MzY3MzI4ZjZlYmIiLCJpYXQiOjE2NTU0Nzc2OTl9.fxdCr1SsDeRV2X_C2y7RseBBCR7Giw8_oe5FFxTi7hs
