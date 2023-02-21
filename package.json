@@ -12,7 +12,7 @@
         "dev": "nodemon ./src/index.js",
         "clean": "rm -rf build && mkdir build",
         "build-babel": "babel ./src -d ./build/src",
-        "build": "npm run clean && npm run build-babel",
+        "build": "node build --output ./build/src",
         "production": "npm run build && node ./build/src/index.js",
         "start": "node ./build/src/index.js"
     },
