@@ -10,10 +10,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "server": "nodemon index",
         "dev": "nodemon ./src/index.js",
-        "clean": "rm -rf build && mkdir build",
-        "build-babel": "babel ./src -d ./build/src",
         "build": "node build --output ./build/src",
-        "production": "npm run build && node ./build/src/index.js",
         "start": "node ./build/src/index.js"
     },
     "author": "Khanv",
